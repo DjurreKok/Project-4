@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<META content="text/html; charset=utf-8" http-equiv="Content-Type" />
+		<LINK  href="stijlblad.css" rel="stylesheet" type="text/css" />
+		<LINK  href="Popcss.css" rel="stylesheet" type="text/css" />
+		<TITLE>Coliccs</TITLE>
+	</HEAD>
+	<BODY> 
+		<DIV id="Menubalk">
+			<a href="Algemene Informatie.html"> Algemene Informatie</a>
+			<a href="Hostingpakketten.html">Hosting Pakketten</a>
+			<a href="Cloudpakketten.html"> Cloudpakketten</a>
+			<a href="ContactGegevens.html"> Contact Gegevens</a>
+			<a href="Klantenpagina.html"> Klanten Pagina</a>
+			<a href="SocialMedia.html"> Social Media</a>
+			<a href="Fotos.html"> Foto's</a>
+		</DIV>
+	 <H1><center>Foto's</center></H1>
+<DIV id="Klant1">
+
+<img id="myImg" src="Pres.jpg" alt="Hier ziet u een presentatie voor de medewerker. Dit gaat over hoe goed ze het wel niet doen." style="width:100%;max-width:300px">
+<p>Hier ziet u een presentatie voor de<br> medewerkers. Dit gaat over hoe <br>goed ze het wel niet doen.</p>
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="Poes">
+  <div id="caption"></div>
+</div>
+</DIV>
+
+<DIV id="Klant2">
+
+<img id="myImg" src="werker.jpg" alt="Deze medewerker is hard aan het werk." style="width:100%;max-width:300px">
+<p>Deze medewerker is hard aan<br>het werk.</p>
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="Kat">
+  <div id="caption"></div>
+</div>
+
+</DIV>
+
+	</BODY>
+
+
+	</HTML>
+	<script>
+var modal = document.getElementById('myModal');
+
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("Poes");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+</script>
